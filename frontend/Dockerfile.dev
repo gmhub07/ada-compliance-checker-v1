@@ -1,0 +1,23 @@
+# Development stage
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies)
+# Remove platform-specific dependencies and install
+RUN sed -i '/@esbuild\/win32-x64/d; /@rollup\/rollup-win32-x64-msvc/d' package.json && \
+    rm -f package-lock.json && \
+    npm install
+
+# Copy source code
+COPY . .
+
+# Expose port
+EXPOSE 5173
+
+# Start development server
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
