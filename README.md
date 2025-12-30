@@ -166,7 +166,7 @@ docker-compose down
 
 1. **Open the Application**: Navigate to the frontend URL in your browser
 2. **Input HTML Content**: Paste or upload HTML content you want to check
-3. **Run Analysis**: Click the "Check Accessibility" button
+3. **Run Analysis**: Click the "Check HTML" button
 4. **Review Results**: View the list of accessibility violations and recommendations
 5. **Export Report**: Generate a PDF report of the findings (if available)
 
