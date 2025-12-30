@@ -117,7 +117,7 @@ backend/
 
 ### Step 1: Navigate to Project Directory
 
-**IMPORTANT**: Make sure you are in the `ada-compliance-checker` directory before running any Docker commands.
+**IMPORTANT**: Make sure you are in the `ada-compliance-checker` directory. If you donot have one, create it and clone the repo here before running any Docker commands. You can choose your own naming, it's not hard and fast rule!
 
 ```bash
 cd ada-compliance-checker
